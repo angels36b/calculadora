@@ -1,0 +1,29 @@
+.boton-contenedor {
+    flex: 1 1;
+    font-weight: bold;
+    font-size: 38px;
+    background: black;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid white;
+    margin: 4px;
+    cursor: pointer;
+    user-select: none;
+    height: 83px;
+    /* width: 100px;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.operador {
+    background-color: blue;
+}
+
+.boton-contenedor:hover{
+    background: radial-gradient(circle, rgba(54,158,244,1) 0%, rgba(35,32,45,1) 74%);
+}
+
+.operador:hover {
+    background: radial-gradient(circle, rgba(54,158,244,1) 0%, rgba(62,4,232,1) 74%);
+}
