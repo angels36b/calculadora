@@ -1,5 +1,6 @@
 
 import './App.css';
+import React from 'react';
 import rayBanLogo from './imagenes/RayBan2.png'
 import Boton from './componentes/Boton';
 import Pantalla from './componentes/pantalla';
@@ -17,13 +18,17 @@ function App() {
 
   return (
     <div className='App'>
+
+      {/* crea la etiqueta de la imagen */}
      <div className='rayBan-logo-contenedor'>
        <img 
        src={rayBanLogo}
        className='rayBan-logo'
        alt='logo de RayBan' />
      </div>
+          {/*etiqueta que maqueta la calculadora  */}
      <div className='calculadora-contenedor'>
+       
        <Pantalla input={input}/>
 
        <div className='fila' >
@@ -51,7 +56,7 @@ function App() {
          <Boton manejarClic={agregarInput}>/</Boton>
        </div>
        <div className= 'fila'> 
-        <BotonClear>Clear</BotonClear>
+        <BotonClear manejarClear={()=> setInput('')} >Clear</BotonClear>
        </div>
      </div>
          </div>
